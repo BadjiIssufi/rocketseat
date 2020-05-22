@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desafio3</title>
+</head>
+<body>
+  <script>
+    function temHabilidade(skills) {
+      var resultado = skills.indexOf('Javascript');
+      if(resultado>=0){
+        return true;    
+      }else{
+        return false;
+      }
+    }
+    var skills = ["Javascript", "ReactJS", "React Native"];
+    temHabilidade(skills); // true ou false
+    console.log(temHabilidade(skills));
+    ////////////////////OUUUUU/////////////////////////
+    /*
+   function habilidade(skill, find) 
+    {
+    var i = 0;
+    while(i < skill.length)
+    {
+        if (skill[i] == find)
+        {
+            return true;
+        }
+        i++;
+    }
+    return false;
+  }
+    var skill = ['javascript', 'reactjs', 'React native'];
+    var resultado = habilidade(skill, 'javascript');
+    console.log(resultado);*/
+  </script>
+</body>
+</html>

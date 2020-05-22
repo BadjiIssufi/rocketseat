@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desafio1</title>
+</head>
+<body>
+  <script>
+    var endereco ={
+      rua: "Rua Cassiano Ricardo",
+      numero: 57,
+      bairro: "Jardim Atlantico",
+      cidade: "Rondonópolis",
+      uf: "MT"
+    };
+    function paraEndereco(endereco) {
+      /*return 'O usuário mora em' ${endereco.cidade} '/' ${endereco.uf}', no bairro' ${endereco.bairo}', na rua' ${endereco.rua} 'com nº' ${endereco.num}.*/
+      var ender = "O usuário mora em "  +  endereco.cidade +  "/ "+ endereco.uf + ", no bairro " + endereco.bairro + ", na rua "  +  endereco.rua + " com nº " + endereco.numero;
+      return ender;
+    };
+        console.log(paraEndereco(endereco));
+  </script>
+  
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM</title>
+</head>
+<body>
+  <!-- Botao-->
+  <div id="app">
+    <button onclick="mostraAlerta()">Me Pressione</button><br><br>
+    <button onmouseover="mostraAlerta()">Passa mouse</button><br><br>
+    <input onkeypress="mostraAlerta()" /><br><br>
+  </div>
+  <hr>
+  <!-- Buscar elemento nosso DOM-->
+  <div id="app2">
+    <input type="text" name="nome" />
+    <button class="botao" >Adicionar</button>
+  </div>
+  <script>
+    //BOTÃO 
+   /* function mostraAlerta() {
+      alert('Botão foi clicado');  
+    }
+    // BUSCA ELEMENTO//
+      // querySelector, 
+      // var inputElement = document.querySelector(' bady div#app2 input');
+      //var inputElement = document.querySelectorAll('input');
+    var inputElement = document.querySelectorAll('input');
+    console.log(inputElement);*/
+    
+    var inputElement = document.querySelector('input[name=nome]');
+    var bntElement = document.querySelector('button.botao');
+
+    bntElement.onclick = function () {
+      var text = inputElement.value;
+      alert(text)
+    }
+  </script>
+  
+</body>
+</html>

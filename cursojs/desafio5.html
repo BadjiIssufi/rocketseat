@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desafio5</title>
+</head>
+<body>
+  <script>
+    var usuarios = [
+      {
+      nome: "Diego",
+      habilidades: ["Javascript", "ReactJS", "Redux"]
+      },
+      {
+      nome: "Gabriel",
+      habilidades: ["VueJS", "Ruby on Rails", "Elixir"]
+      },
+      {
+      nome: "Issufi",
+      habilidades: ["HTML", "CSS", "PHP"]
+      }
+      ];
+      for( i of usuarios )
+       console.log( 
+         `O ${ Object.values( i )[0]}  possui as habilidades: ${ Object.values( i )[1].join(', ') }.` 
+          )
+
+      /*
+      O Diego possui as habilidades: Javascript, ReactJS, Redux.
+      O Gabriel possui as habilidades: VueJS, Ruby on Rails, Elixir.
+      O Issufi possui as habilidades: HTML, CSS, PHP.
+      */
+  </script>
+  
+</body>
+</html>

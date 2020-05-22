@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Curso de javascripts</title>
+</head>
+<body>
+   <script>
+     //variavel
+     var nome = "Issufi Badji";
+     var idade =  26;
+     var peso =  1.60;
+     var humano =  true;
+
+    //vector
+     var jogadores =  ['CR7','LM10','Ney'];
+
+    //Orientada objeto 
+     var aluno ={
+       //nome: 'Badji',
+       nome :jogadores[1],
+       idade: 25,
+       peso: 1.70,
+       humano: false, 
+     };
+     //Operaçoes 
+     var x=10, y=5;
+     var resultado = x + y;
+     x+=3;
+
+     // função
+     function soma (n1, n2) {
+       var res = n1 + n2 ;
+       return res;  
+     }
+     var res = soma(1, 3);
+
+
+     // funçao restorna sexo
+     function retornaSexo(sexo) {
+       //M-Masculino, F-Feminino
+
+      if (sexo === 'M') {
+        return 'Masculino';
+      } else if (sexo === "F") {
+        return 'Feminino'
+      } else {
+        return 'Outro';  
+      } 
+     }
+     var respo = retornaSexo ('F')
+
+     // Switch case
+     function retornaSexoSwitch(sexo) {
+       switch (sexo) {
+          case 'M':
+            return 'Masculino'
+            break;
+
+          case 'F':
+            return 'Feminino'
+            break;
+
+          default:
+            return 'Outro'
+              break;
+       }
+     }
+     var resposta = retornaSexoSwitch ('MM')
+
+     // Operadores Logicos(===, !==, &&, ||)
+     var sexo = 'M' , idade = 23;
+
+     if(sexo === 'M' && idade >= 18){
+       console.log('OK');
+     }
+
+     // Operadores Ternaria 
+     var sexo = 'M';
+     var retorno= (sexo == 'M')? 'Masculino' : 'Feminino';
+   
+     // Laço de Repitição 
+
+     for (var i = 0; i <=5; i++) {
+       console.log(i);
+       
+     }
+
+     var j = 0;
+     while (j <= 10) {
+       console.log(j);
+       j++;
+       
+     }
+
+     //Interval 
+     function exibeAlgo() {
+       console.log('Excuta varias vez por segundo');
+       
+     }
+     setInterval(exibeAlgo, 1000);
+
+     //O Timeout
+     function exibeAlgoTime() {
+       console.log('Excuta uma vez por segundo');
+       
+     }
+     setTimeout(exibeAlgoTime, 5000);
+
+
+     //console.log() é uma função global
+     //se for objecto a gente utiliza o ponto no colsole.log(aluno.nome) para acesssar
+     //se for array a gente utiliza o posiçao no colsole.log(nome[posiçao]) para acesssar
+     console.log('Hello World');
+     console.log(jogadores[0]);
+     console.log(aluno.nome);
+     console.log(resultado);
+     console.log(x);
+     console.log(res);
+     console.log(respo);
+     console.log(resposta);
+     console.log(retorno);
+   </script>
+</body>
+</html>
